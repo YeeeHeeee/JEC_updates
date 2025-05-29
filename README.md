@@ -56,3 +56,14 @@ Input parameters read by default:
 
 git remote add origin git@github.com:dharmendergaur/JEC.git
 git push -u origin master
+
+## Others
+# activate the cmsenv:
+```bash
+cd /eos/user/y/yehe/CMSSW/CMSSW_14_2_0/
+cmsenv
+```
+# activate the env:
+```bash
+activate_myenv
+```
