@@ -60,9 +60,18 @@ git push -u origin master
 ## Others
 # activate the cmsenv:
 ```bash
-cd /eos/user/y/yehe/CMSSW/CMSSW_14_2_0/
+conda deactivate
+```
+
+```bash
+cd /eos/user/y/yehe/CMSSW_14_2_0/
 cmsenv
 ```
+# authorised first:
+```bash
+voms-proxy-init -voms cms -rfc --valid 168:0
+```
+
 # activate the env:
 ```bash
 activate_myenv
