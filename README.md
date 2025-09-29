@@ -24,7 +24,7 @@ Input parameters read by default:
 - `--l1nanoPhiRing`
 
 ```bash
-python3 BDTInputProducer/script.py --l1nano /eos/home-y/yehe/JEC_updates/sample_root_file/Nano.root
+python3 BDTInputProducer/script.py --l1nano /eos/home-y/yehe/JEC_updates/sample_root_files/Nano.root
 ```
 ## Step 3: BDT trainning
 
