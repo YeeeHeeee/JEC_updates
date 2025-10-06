@@ -1,12 +1,12 @@
 from CRABClient.UserUtilities import config
 
-username='ddharmen'
-lumi_mask = 'https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions24/Cert_Collisions2024_378981_386951_Golden.json'
+username='yehe'
+lumi_mask = 'https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions25/Cert_Collisions2025_391658_397032_Golden.json'
 output_dataset_tag = 'jetMET24I'
-input_dataset = '/JetMET0/Run2024I-PromptReco-v1/MINIAOD'
+input_dataset = '/JetMET0/Run2025C-PromptReco-v1/AOD'
 pset_name = 'nano.py'
 output_files = ['nano.root']
-file_output_path = f'/store/user/{username}/JECs2025/JETMET24I/miniaod/baseline'
+file_output_path = f'/store/group/dpg_trigger/comm_trigger/L1Trigger/{username}/JECs2025/'
 config = config()
 
 # General settings
@@ -18,7 +18,7 @@ config.General.transferOutputs = True
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = pset_name
 config.JobType.outputFiles = output_files
-config.JobType.maxMemoryMB = 2500
+config.JobType.maxMemoryMB = 2500 #4500
 
 # Data settings
 config.Data.inputDataset = input_dataset
@@ -28,7 +28,7 @@ config.Data.useParent = True
 config.Data.partialDataset = True
 
 config.Data.splitting = 'FileBased'
-config.Data.unitsPerJob = 1
+config.Data.unitsPerJob = 1 #10
 
 config.Data.allowNonValidInputDataset = True
 
