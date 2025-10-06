@@ -16,7 +16,11 @@ After this, replace the nano.py:
 ```bash
 mv customL1toNANO_RAW2DIGI_L1Reco_PAT_NANO.py nano.py
 ```
-
+- **Submit Jobs:**
+  ```bash
+  crab submit -c job_jetmet.py
+  ```
+  
 ## Step 2: Produce BDT input .csv file
 
 The produced L1Nano files are read and BDT input in `.csv` files are produced by `BDTInputProducer/script.py`.
