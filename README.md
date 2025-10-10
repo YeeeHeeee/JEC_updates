@@ -20,7 +20,10 @@ mv customL1toNANO_RAW2DIGI_L1Reco_PAT_NANO.py nano.py
   ```bash
   crab submit -c job_jetmet.py
   ```
-  
+- **Check the jobs status:**
+  ```bash
+  crab status -d ./crab_Muon2025I
+  ```
 ## Step 2: Produce BDT input .csv file
 
 The produced L1Nano files are read and BDT input in `.csv` files are produced by `BDTInputProducer/script.py`.
