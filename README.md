@@ -91,3 +91,9 @@ voms-proxy-init -voms cms -rfc --valid 168:0
 ```bash
 activate_myenv
 ```
+# Check the site available for the files:
+```bash
+dasgoclient --query="site dataset=/JetMET0/Run2025F-PromptReco-v1/AOD"
+```
+
+
