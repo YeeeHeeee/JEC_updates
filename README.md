@@ -24,6 +24,12 @@ mv customL1toNANO_RAW2DIGI_L1Reco_PAT_NANO.py nano.py
   ```bash
   crab status -d ./crab_Muon2025I
   ```
+
+- **Merge the root files:**
+```bash
+hadd -f merged_jetMET25F.root 000*/nano_*.root
+```
+
 ## Step 2: Produce BDT input .csv file
 
 The produced L1Nano files are read and BDT input in `.csv` files are produced by `BDTInputProducer/script.py`.
